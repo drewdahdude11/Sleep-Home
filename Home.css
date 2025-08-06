@@ -1,12 +1,12 @@
- *  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f0f4f8;
+  background: #e6ecf5;
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -14,60 +14,94 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
 header {
-  background: #051e3a;
-  color: white;
-  padding: 2rem;
+  background: #1b2a49; /* deep blue for calmness */
+  color: #fff;
+  padding: 2.5rem 1rem;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Main Content */
 main {
   flex: 1;
-  padding: 2rem;
-  max-width: 800px;
+  padding: 2rem 1rem;
+  max-width: 900px;
   margin: auto;
 }
 
+/* Sections */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
 }
 
+/* Section Headings */
 .intro h2,
 .cta h2 {
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: #1b2a49;
+  font-size: 1.8rem;
+  border-left: 4px solid #8cb4ff;
+  padding-left: 0.75rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
-  background: #051e3a;
-  color: white;
+  background: #4c70a8;
+  color: #fff;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(76, 112, 168, 0.25);
 }
 
 .btn:hover {
-  background: #0a396c;
+  background: #355882;
+  transform: translateY(-2px);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #eaeaea;
+  padding: 1.5rem 1rem;
+  background: #f4f6f8;
   font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
 }
+
+/* Bottom Image */
 .bottom-image {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .bottom-image img {
-  width: 600px; /* adjust as needed */
+  max-width: 100%;
+  width: 500px;
   height: auto;
-  border-radius: 8px; /* optional, for rounded corners */
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bottom-image img:hover {
+  transform: scale(1.03);
 }
